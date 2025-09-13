@@ -157,52 +157,63 @@ button:hover {
 
 /* --- ใบเกียรติบัตร --- */
 .certificate-container {
-    border: 10px solid #3498db;
-    padding: 30px;
-    text-align: center;
-    background-color: #fdfdfd;
-    border-radius: 8px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border: 10px solid #c9a452; /* เปลี่ยนสีขอบเป็นโทนสีทอง */
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+
+    /* --- ส่วนที่แก้ไข --- */
+    /* วิธีที่ 1: ใช้ Gradient สีอ่อนๆ ทำให้ดูหรูหรา (แนะนำ) */
+/*     background: radial-gradient(circle, #fffef5 0%, #f7f2e0 100%); */
+
+    /* วิธีที่ 2: ถ้าต้องการใช้รูปภาพ ให้ลบโค้ดด้านบนออก แล้วเปิดใช้งานโค้ดด้านล่างนี้แทน */
+    background-image: url('https://knid1515.github.io/Pict_All/BKpiyamarat.png');
+    background-size: cover;
+    background-position: center;
+   
+    /* --- สิ้นสุดส่วนที่แก้ไข --- */
 }
+
 .certificate-header h2 {
-    color: #2c3e50;
-    font-size: 2.5em;
-    margin: 0;
-    border: none;
-    padding-bottom: 0;
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin: 0;
+    border: none;
+    padding-bottom: 0;
 }
 .certificate-header h3 {
-    color: #7f8c8d;
-    font-size: 1.5em;
-    margin-top: 0;
-    border: none;
-    padding-bottom: 0;
+    color: #7f8c8d;
+    font-size: 1.5em;
+    margin-top: 0;
+    border: none;
+    padding-bottom: 0;
 }
 .certificate-body {
-    margin: 40px 0;
+    margin: 40px 0;
 }
 .certificate-body p {
-    font-size: 1.2em;
+    font-size: 1.2em;
 }
 .cert-name {
-    color: #e67e22;
-    font-size: 2.8em;
-    border-bottom: 2px solid #e67e22;
-    padding-bottom: 10px;
-    margin: 20px auto;
-    max-width: 80%;
-    display: inline-block;
+    color: #bf8f3f; /* ปรับสีชื่อให้เข้ากับธีมสีทอง */
+    font-size: 2.8em;
+    border-bottom: 2px solid #bf8f3f; /* ปรับสีเส้นใต้ */
+    padding-bottom: 10px;
+    margin: 20px auto;
+    max-width: 80%;
+    display: inline-block;
 }
 .cert-score {
-    font-size: 2em;
-    font-weight: bold;
-    color: #27ae60;
-    margin-top: 15px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #27ae60;
+    margin-top: 15px;
 }
 .certificate-footer {
-    margin-top: 40px;
-    color: #34495e;
-    font-size: 1.1em;
+    margin-top: 40px;
+    color: #34495e;
+    font-size: 1.1em;
 }
 
 /* --- ปุ่มดาวน์โหลด --- */
