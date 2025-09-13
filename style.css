@@ -10,6 +10,13 @@ body {
     padding: 20px;
     display: flex;
     justify-content: center;
+
+    /* --- เพิ่มพื้นหลังรูปภาพ --- */
+    background-image: url('https://knid1515.github.io/Pict_All/%E0%B8%AA%E0%B8%B5%E0%B8%97%E0%B8%AD%E0%B8%87%20%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%9A%E0%B8%87%E0%B9%88%E0%B8%B2%E0%B8%A2%20%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%9B%E0%B8%B4%E0%B8%A2%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%8A%20%E0%B9%82%E0%B8%9E%E0%B8%AA%E0%B8%95%E0%B9%8C%20Facebook.png');
+    background-size: cover; /* ทำให้รูปภาพครอบคลุมพื้นที่ทั้งหมด */
+    background-attachment: fixed; /* ตรึงรูปภาพพื้นหลังไว้กับที่เมื่อเลื่อนหน้าจอ */
+    background-position: center center; /* จัดตำแหน่งรูปภาพให้อยู่กึ่งกลาง */
+    /* --- สิ้นสุดการเพิ่มพื้นหลังรูปภาพ --- */
 }
 
 .container {
@@ -19,6 +26,8 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     max-width: 800px;
     width: 100%;
+    /* อาจจะต้องเพิ่มความโปร่งใสเล็กน้อยถ้าพื้นหลังรูปภาพเข้มเกินไป */
+    /* background-color: rgba(255, 255, 255, 0.9); */
 }
 
 h1, h2, h3 {
@@ -27,10 +36,9 @@ h1, h2, h3 {
     padding-bottom: 10px;
     margin-top: 25px;
 }
-h1:first-child { /* สำหรับ h1 ตัวแรกสุดใน container */
+h1:first-child {
     margin-top: 0;
 }
-
 
 /* --- หน้ากรอกชื่อ (index.html) --- */
 .name-input-group {
@@ -61,7 +69,7 @@ h1:first-child { /* สำหรับ h1 ตัวแรกสุดใน cont
 }
 .article-content p {
     margin-bottom: 15px;
-    text-align: justify; /* จัดข้อความให้เต็มบรรทัด */
+    text-align: justify;
 }
 .article-content ul {
     list-style-type: disc;
@@ -84,7 +92,6 @@ h1:first-child { /* สำหรับ h1 ตัวแรกสุดใน cont
     margin-top: 10px;
     font-style: italic;
 }
-
 
 /* --- หน้าแบบทดสอบ (quiz.html) --- */
 .question {
@@ -123,7 +130,7 @@ button:hover {
 }
 
 .retry-button {
-    background-color: #e67e22; /* สีส้ม */
+    background-color: #e67e22;
 }
 .retry-button:hover {
     background-color: #d35400;
@@ -155,7 +162,7 @@ button:hover {
     text-align: center;
     background-color: #fdfdfd;
     border-radius: 8px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* เพิ่มเงาให้ดูโดดเด่น */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 .certificate-header h2 {
     color: #2c3e50;
@@ -182,9 +189,9 @@ button:hover {
     font-size: 2.8em;
     border-bottom: 2px solid #e67e22;
     padding-bottom: 10px;
-    margin: 20px auto; /* ใช้ auto เพื่อจัดให้อยู่กึ่งกลาง */
-    max-width: 80%; /* จำกัดความกว้างไม่ให้ยาวเกินไป */
-    display: inline-block; /* ทำให้ border-bottom มีขนาดเท่าข้อความ */
+    margin: 20px auto;
+    max-width: 80%;
+    display: inline-block;
 }
 .cert-score {
     font-size: 2em;
@@ -197,22 +204,23 @@ button:hover {
     color: #34495e;
     font-size: 1.1em;
 }
+
 /* --- ปุ่มดาวน์โหลด --- */
 .download-button-container {
     text-align: center;
-    margin-top: -15px; /* ดึงปุ่มขึ้นมาเล็กน้อย */
+    margin-top: -15px;
     padding-bottom: 20px;
 }
 
 #download-cert-button {
-    background-color: #27ae60; /* สีเขียว */
-    width: auto; /* ไม่ต้องเต็มความกว้าง */
+    background-color: #27ae60;
+    width: auto;
     padding: 10px 20px;
     font-size: 16px;
-    display: inline-flex; /* จัดไอคอนกับข้อความให้อยู่ในแนวเดียวกัน */
+    display: inline-flex;
     align-items: center;
-    gap: 8px; /* ระยะห่างระหว่างไอคอนกับข้อความ */
-    border-bottom-left-radius: 8px; /* ทำให้มุมโค้งมนเข้ากับกรอบ */
+    gap: 8px;
+    border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
