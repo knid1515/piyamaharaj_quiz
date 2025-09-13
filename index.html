@@ -3,31 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ทบทวนความรู้: วันปิยมหาราช</title>
+    <title>แบบทดสอบวันปิยมหาราช</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>วันปิยมหาราช: ทบทวนความรู้</h1>
-
-        <div class="study-content">
-            <p><strong>วันปิยมหาราช</strong> ตรงกับวันที่ 23 ตุลาคมของทุกปี เป็นวันคล้ายวันสวรรคตของพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว รัชกาลที่ 5 แห่งราชวงศ์จักรี</p>
-            <p>เนื่องจากพระองค์ทรงเป็นที่รักใคร่อย่างยิ่งของพสกนิกร พระองค์จึงได้รับการถวายพระราชสมัญญานามว่า <strong>"สมเด็จพระปิยมหาราช"</strong> ซึ่งมีความหมายว่า "พระมหากษัตริย์ที่ทรงเป็นที่รักยิ่งของปวงชน"</p>
-            
-            <h2>พระราชกรณียกิจที่สำคัญ</h2>
-            <ul>
-                <li><strong>การเลิกทาส:</strong> ทรงประกาศ "พระราชบัญญัติพิกัดเกษียณลูกทาสลูกไทย" และใช้วิธีการที่ละมุนละม่อม ทำให้การเลิกทาสสำเร็จลุล่วงไปโดยไม่มีการนองเลือด</li>
-                <li><strong>การปฏิรูประบบราชการ:</strong> ทรงจัดตั้งกระทรวง 12 กระทรวง และปฏิรูประบบการปกครองส่วนภูมิภาคเป็น "มณฑลเทศาภิบาล" เพื่อรวมอำนาจเข้าสู่ศูนย์กลาง</li>
-                <li><strong>การเสด็จประพาสยุโรป:</strong> ทรงเป็นพระมหากษัตริย์ไทยพระองค์แรกที่เสด็จประพาสยุโรปถึง 2 ครั้ง เพื่อเจริญสัมพันธไมตรีและนำความเจริญมาสู่ประเทศ</li>
-                <li><strong>การสาธารณูปโภค:</strong> ทรงริเริ่มกิจการไปรษณีย์ โทรเลข การรถไฟ และการประปา</li>
-                <li><strong>การศึกษา:</strong> ทรงตั้งโรงเรียนหลวงหลายแห่ง รวมถึงโรงเรียนสวนกุหลาบวิทยาลัย</li>
-                <li><strong>การแพทย์:</strong> ทรงโปรดเกล้าฯ ให้สร้างโรงพยาบาลศิริราช ซึ่งเป็นโรงพยาบาลหลวงแห่งแรกของไทย</li>
-                <li><strong>เศรษฐกิจและการคลัง:</strong> ทรงโปรดเกล้าฯ ให้มีการผลิตธนบัตรขึ้นใช้เป็นครั้งแรกในประเทศ</li>
-            </ul>
-            <p>พระบรมราชานุสาวรีย์ที่โดดเด่นของพระองค์คือ <strong>พระบรมรูปทรงม้า</strong> ซึ่งประดิษฐานอยู่ที่ลานพระราชวังดุสิต</p>
+        <h1>ทดสอบความรู้: วันปิยมหาราช</h1>
+        <p>ยินดีต้อนรับเข้าสู่แบบทดสอบความรู้เกี่ยวกับวันปิยมหาราช ขอให้คุณตั้งใจทำแบบทดสอบ และหากทำคะแนนได้ดี จะมีเกียรติบัตรมอบให้!</p>
+        
+        <div class="name-input-group">
+            <label for="name-input">กรุณาใส่ชื่อของคุณเพื่อเริ่มทำแบบทดสอบ:</label>
+            <input type="text" id="name-input" placeholder="ตัวอย่าง: สมชาย ใจดี">
         </div>
-
-        <a href="quiz.html" class="start-button">เริ่มทำแบบทดสอบ</a>
+        
+        <button id="start-button">เริ่มทำแบบทดสอบ</button>
+        <p id="error-message" class="error-text" style="display: none;">กรุณากรอกชื่อก่อนเริ่ม</p>
     </div>
+
+    <script>
+        document.getElementById('start-button').addEventListener('click', function() {
+            const nameInput = document.getElementById('name-input');
+            const errorMessage = document.getElementById('error-message');
+            const userName = nameInput.value.trim(); // .trim() เพื่อตัดช่องว่างหน้า-หลัง
+
+            if (userName) {
+                // บันทึกชื่อลงใน Local Storage เพื่อให้หน้า quiz.html นำไปใช้ต่อได้
+                localStorage.setItem('quizUserName', userName);
+                // ไปยังหน้าแบบทดสอบ
+                window.location.href = 'quiz.html';
+            } else {
+                // ถ้าไม่กรอกชื่อ ให้แสดงข้อความแจ้งเตือน
+                errorMessage.style.display = 'block';
+                nameInput.focus();
+            }
+        });
+    </script>
 </body>
 </html>
