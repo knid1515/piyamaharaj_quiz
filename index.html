@@ -3,289 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>แบบทดสอบวันปิยมหาราช</title>
-    <style>
-        /* CSS สำหรับตกแต่งให้สวยงาม */
-        @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
-
-        body {
-            font-family: 'Sarabun', sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .container {
-            background-color: #ffffff;
-            padding: 20px 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            max-width: 800px;
-            width: 100%;
-        }
-
-        h1, h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-
-        .study-content ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        .question {
-            margin-bottom: 20px;
-        }
-        
-        .question p {
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .options div {
-            margin-bottom: 8px;
-            padding: 5px;
-            border-radius: 5px;
-        }
-
-        .options label {
-            margin-left: 10px;
-            cursor: pointer;
-        }
-        
-        button {
-            display: block;
-            width: 100%;
-            padding: 12px;
-            background-color: #3498db;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 18px;
-            cursor: pointer;
-            margin-top: 20px;
-            transition: background-color 0.3s;
-        }
-
-        button:hover {
-            background-color: #2980b9;
-        }
-
-        #results {
-            margin-top: 30px;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: #f9f9f9;
-        }
-
-        #score {
-            font-size: 24px;
-            font-weight: bold;
-            text-align: center;
-            color: #e67e22;
-        }
-
-        .answer-review {
-            margin-top: 15px;
-        }
-
-        .correct {
-            color: #27ae60;
-            font-weight: bold;
-        }
-
-        .incorrect {
-            color: #c0392b;
-            font-weight: bold;
-        }
-        
-        .correct-answer-text {
-            color: #27ae60;
-            font-style: italic;
-        }
-    </style>
+    <title>ทบทวนความรู้: วันปิยมหาราช</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="container">
-        <h1>แบบทดสอบความรู้: วันปิยมหาราช</h1>
+        <h1>วันปิยมหาราช: ทบทวนความรู้</h1>
 
         <div class="study-content">
-            <h2>เนื้อหาเพื่อทบทวนความรู้</h2>
-            <p><strong>วันปิยมหาราช</strong> ตรงกับวันที่ 23 ตุลาคมของทุกปี เป็นวันคล้ายวันสวรรคตของพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว รัชกาลที่ 5 เนื่องจากพระองค์ทรงเป็นที่รักใคร่อย่างยิ่งของพสกนิกรทั้งชาวไทยและชาวต่างชาติ พระองค์จึงได้รับการถวายพระราชสมัญญานามว่า <strong>"สมเด็จพระปิยมหาราช"</strong> ซึ่งมีความหมายว่า "พระมหากษัตริย์ที่ทรงเป็นที่รักยิ่งของปวงชน"</p>
-            <p>พระราชกรณียกิจที่สำคัญของพระองค์ ได้แก่:</p>
-            <ul>
-                <li><strong>การเลิกทาส:</strong> ทรงดำเนินการเลิกทาสอย่างค่อยเป็นค่อยไปจนสำเร็จ ทำให้คนไทยได้เป็นไทอย่างสมบูรณ์</li>
-                <li><strong>การปฏิรูประบบราชการ:</strong> ทรงจัดตั้งกระทรวงต่าง ๆ เพื่อบริหารราชการแผ่นดินให้ทันสมัย</li>
-                <li><strong>การไปรษณีย์และโทรเลข:</strong> ทรงริเริ่มกิจการไปรษณีย์และโทรเลขในประเทศไทย</li>
-                <li><strong>การรถไฟ:</strong> ทรงโปรดเกล้าฯ ให้สร้างทางรถไฟสายแรก คือ กรุงเทพฯ ถึงนครราชสีมา</li>
-                <li><strong>การศึกษา:</strong> ทรงปรับปรุงระบบการศึกษาให้ทันสมัย</li>
-            </ul>
-        </div>
-
-        <hr>
-
-        <div id="quiz-container">
-            <h2>เริ่มทำแบบทดสอบ</h2>
-            <form id="quiz-form">
-                <div class="question">
-                    <p>1. วันปิยมหาราชตรงกับวันที่เท่าใดของทุกปี</p>
-                    <div class="options">
-                        <div><input type="radio" name="q1" id="q1a" value="a"><label for="q1a">5 ธันวาคม</label></div>
-                        <div><input type="radio" name="q1" id="q1b" value="b"><label for="q1b">23 ตุลาคม</label></div>
-                        <div><input type="radio" name="q1" id="q1c" value="c"><label for="q1c">13 ตุลาคม</label></div>
-                        <div><input type="radio" name="q1" id="q1d" value="d"><label for="q1d">10 ธันวาคม</label></div>
-                    </div>
-                </div>
-
-                <div class="question">
-                    <p>2. "พระปิยมหาราช" เป็นพระราชสมัญญานามของพระมหากษัตริย์รัชกาลใด</p>
-                    <div class="options">
-                        <div><input type="radio" name="q2" id="q2a" value="a"><label for="q2a">รัชกาลที่ 4</label></div>
-                        <div><input type="radio" name="q2" id="q2b" value="b"><label for="q2b">รัชกาลที่ 9</label></div>
-                        <div><input type="radio" name="q2" id="q2c" value="c"><label for="q2c">รัชกาลที่ 5</label></div>
-                        <div><input type="radio" name="q2" id="q2d" value="d"><label for="q2d">รัชกาลที่ 6</label></div>
-                    </div>
-                </div>
-
-                <div class="question">
-                    <p>3. พระราชกรณียกิจที่สำคัญที่สุดข้อหนึ่งของรัชกาลที่ 5 คืออะไร</p>
-                    <div class="options">
-                        <div><input type="radio" name="q3" id="q3a" value="a"><label for="q3a">การเลิกทาส</label></div>
-                        <div><input type="radio" name="q3" id="q3b" value="b"><label for="q3b">การสร้างสนามบิน</label></div>
-                        <div><input type="radio" name="q3" id="q3c" value="c"><label for="q3c">การประดิษฐ์อักษรไทย</label></div>
-                        <div><input type="radio" name="q3" id="q3d" value="d"><label for="q3d">การเปลี่ยนชื่อประเทศ</label></div>
-                    </div>
-                </div>
-
-                <div class="question">
-                    <p>4. ข้อใดไม่ใช่พระราชกรณียกิจในสมัยรัชกาลที่ 5</p>
-                    <div class="options">
-                        <div><input type="radio" name="q4" id="q4a" value="a"><label for="q4a">การสร้างการรถไฟ</label></div>
-                        <div><input type="radio" name="q4" id="q4b" value="b"><label for="q4b">การปฏิรูประบบราชการ</label></div>
-                        <div><input type="radio" name="q4" id="q4c" value="c"><label for="q4c">การจัดตั้งกิจการไปรษณีย์</label></div>
-                        <div><input type="radio" name="q4" id="q4d" value="d"><label for="q4d">การก่อตั้งธนาคารแห่งประเทศไทย</label></div>
-                    </div>
-                </div>
-
-                <button type="submit">ส่งคำตอบ</button>
-            </form>
-        </div>
-
-        <div id="results" style="display: none;">
-             <h2>ผลการทดสอบ</h2>
-             <p id="score"></p>
-             <div id="answer-details"></div>
-        </div>
-    </div>
-
-    <script>
-        // JavaScript สำหรับการทำงานของแบบทดสอบ
-        
-        // 1. ข้อมูลคำถามและคำตอบที่ถูกต้อง
-        const quizData = [
-            {
-                question: "1. วันปิยมหาราชตรงกับวันที่เท่าใดของทุกปี",
-                correctAnswer: "b",
-                options: {
-                    a: "5 ธันวาคม",
-                    b: "23 ตุลาคม",
-                    c: "13 ตุลาคม",
-                    d: "10 ธันวาคม"
-                }
-            },
-            {
-                question: "2. 'พระปิยมหาราช' เป็นพระราชสมัญญานามของพระมหากษัตริย์รัชกาลใด",
-                correctAnswer: "c",
-                options: {
-                    a: "รัชกาลที่ 4",
-                    b: "รัชกาลที่ 9",
-                    c: "รัชกาลที่ 5",
-                    d: "รัชกาลที่ 6"
-                }
-            },
-            {
-                question: "3. พระราชกรณียกิจที่สำคัญที่สุดข้อหนึ่งของรัชกาลที่ 5 คืออะไร",
-                correctAnswer: "a",
-                options: {
-                    a: "การเลิกทาส",
-                    b: "การสร้างสนามบิน",
-                    c: "การประดิษฐ์อักษรไทย",
-                    d: "การเปลี่ยนชื่อประเทศ"
-                }
-            },
-            {
-                question: "4. ข้อใดไม่ใช่พระราชกรณียกิจในสมัยรัชกาลที่ 5",
-                correctAnswer: "d",
-                options: {
-                    a: "การสร้างการรถไฟ",
-                    b: "การปฏิรูประบบราชการ",
-                    c: "การจัดตั้งกิจการไปรษณีย์",
-                    d: "การก่อตั้งธนาคารแห่งประเทศไทย"
-                }
-            }
-        ];
-
-        // 2. อ้างอิงถึง Element ต่างๆ ใน HTML
-        const quizForm = document.getElementById('quiz-form');
-        const resultsContainer = document.getElementById('results');
-        const scoreElement = document.getElementById('score');
-        const answerDetailsElement = document.getElementById('answer-details');
-
-        // 3. สร้าง Event Listener รอการกดปุ่ม "ส่งคำตอบ"
-        quizForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // ป้องกันไม่ให้หน้าเว็บโหลดใหม่
-
-            let score = 0;
-            let answerDetailsHTML = '<h3>เฉลยแบบทดสอบ</h3>';
+            <p><strong>วันปิยมหาราช</strong> ตรงกับวันที่ 23 ตุลาคมของทุกปี เป็นวันคล้ายวันสวรรคตของพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว รัชกาลที่ 5 แห่งราชวงศ์จักรี</p>
+            <p>เนื่องจากพระองค์ทรงเป็นที่รักใคร่อย่างยิ่งของพสกนิกร พระองค์จึงได้รับการถวายพระราชสมัญญานามว่า <strong>"สมเด็จพระปิยมหาราช"</strong> ซึ่งมีความหมายว่า "พระมหากษัตริย์ที่ทรงเป็นที่รักยิ่งของปวงชน"</p>
             
-            // วนลูปเพื่อตรวจคำตอบแต่ละข้อ
-            quizData.forEach((data, index) => {
-                const questionNumber = index + 1;
-                const formName = 'q' + questionNumber; // ชื่อของกลุ่ม radio button (q1, q2, ...)
-                
-                // หาคำตอบที่ผู้ใช้เลือก
-                const userAnswer = (quizForm.elements[formName] || {}).value;
+            <h2>พระราชกรณียกิจที่สำคัญ</h2>
+            <ul>
+                <li><strong>การเลิกทาส:</strong> ทรงประกาศ "พระราชบัญญัติพิกัดเกษียณลูกทาสลูกไทย" และใช้วิธีการที่ละมุนละม่อม ทำให้การเลิกทาสสำเร็จลุล่วงไปโดยไม่มีการนองเลือด</li>
+                <li><strong>การปฏิรูประบบราชการ:</strong> ทรงจัดตั้งกระทรวง 12 กระทรวง และปฏิรูประบบการปกครองส่วนภูมิภาคเป็น "มณฑลเทศาภิบาล" เพื่อรวมอำนาจเข้าสู่ศูนย์กลาง</li>
+                <li><strong>การเสด็จประพาสยุโรป:</strong> ทรงเป็นพระมหากษัตริย์ไทยพระองค์แรกที่เสด็จประพาสยุโรปถึง 2 ครั้ง เพื่อเจริญสัมพันธไมตรีและนำความเจริญมาสู่ประเทศ</li>
+                <li><strong>การสาธารณูปโภค:</strong> ทรงริเริ่มกิจการไปรษณีย์ โทรเลข การรถไฟ และการประปา</li>
+                <li><strong>การศึกษา:</strong> ทรงตั้งโรงเรียนหลวงหลายแห่ง รวมถึงโรงเรียนสวนกุหลาบวิทยาลัย</li>
+                <li><strong>การแพทย์:</strong> ทรงโปรดเกล้าฯ ให้สร้างโรงพยาบาลศิริราช ซึ่งเป็นโรงพยาบาลหลวงแห่งแรกของไทย</li>
+                <li><strong>เศรษฐกิจและการคลัง:</strong> ทรงโปรดเกล้าฯ ให้มีการผลิตธนบัตรขึ้นใช้เป็นครั้งแรกในประเทศ</li>
+            </ul>
+            <p>พระบรมราชานุสาวรีย์ที่โดดเด่นของพระองค์คือ <strong>พระบรมรูปทรงม้า</strong> ซึ่งประดิษฐานอยู่ที่ลานพระราชวังดุสิต</p>
+        </div>
 
-                // สร้าง HTML สำหรับแสดงเฉลย
-                answerDetailsHTML += `<div class="answer-review">`;
-                answerDetailsHTML += `<p><strong>${data.question}</strong></p>`;
-                
-                if (userAnswer) {
-                    const isCorrect = (userAnswer === data.correctAnswer);
-                    
-                    if (isCorrect) {
-                        score++;
-                        answerDetailsHTML += `<p>คุณตอบ: <span class="correct">${data.options[userAnswer]} (ถูกต้อง)</span></p>`;
-                    } else {
-                        answerDetailsHTML += `<p>คุณตอบ: <span class="incorrect">${data.options[userAnswer]} (ผิด)</span></p>`;
-                        answerDetailsHTML += `<p class="correct-answer-text">เฉลย: ${data.options[data.correctAnswer]}</p>`;
-                    }
-                } else {
-                     // กรณีผู้ใช้ไม่ได้ตอบ
-                    answerDetailsHTML += `<p class="incorrect">คุณไม่ได้ตอบข้อนี้</p>`;
-                    answerDetailsHTML += `<p class="correct-answer-text">เฉลย: ${data.options[data.correctAnswer]}</p>`;
-                }
-                
-                answerDetailsHTML += `</div><hr>`;
-            });
-
-            // 4. แสดงผลคะแนนและเฉลย
-            scoreElement.textContent = `คุณได้ ${score} จาก ${quizData.length} คะแนน`;
-            answerDetailsElement.innerHTML = answerDetailsHTML;
-            resultsContainer.style.display = 'block'; // ทำให้ส่วนแสดงผลมองเห็นได้
-
-            // เลื่อนหน้าจอไปที่ผลลัพธ์
-            resultsContainer.scrollIntoView({ behavior: 'smooth' });
-        });
-
-    </script>
+        <a href="quiz.html" class="start-button">เริ่มทำแบบทดสอบ</a>
+    </div>
 </body>
 </html>
