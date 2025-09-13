@@ -12,7 +12,7 @@ body {
     justify-content: center;
 
     /* --- เพิ่มพื้นหลังรูปภาพ --- */
-    background-image: url('https://knid1515.github.io/Pict_All/%E0%B8%AA%E0%B8%B5%E0%B8%97%E0%B8%AD%E0%B8%87%20%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%9A%E0%B8%87%E0%B9%88%E0%B8%B2%E0%B8%A2%20%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%9B%E0%B8%B4%E0%B8%A2%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%8A%20%E0%B9%82%E0%B8%9E%E0%B8%AA%E0%B8%95%E0%B9%8C%20Facebook.png');
+    background-image: url('https://knid1515.github.io/Pict_All/BKpiyamarat.png');
     background-size: cover; /* ทำให้รูปภาพครอบคลุมพื้นที่ทั้งหมด */
     background-attachment: fixed; /* ตรึงรูปภาพพื้นหลังไว้กับที่เมื่อเลื่อนหน้าจอ */
     background-position: center center; /* จัดตำแหน่งรูปภาพให้อยู่กึ่งกลาง */
