@@ -8,77 +8,154 @@
 </head>
 <body>
     <div class="container">
-        <h1>แบบทดสอบวันปิยมหาราช (10 ข้อ)</h1>
+        <h1 id="quiz-header">แบบทดสอบวันปิยมหาราช</h1>
 
-        <form id="quiz-form">
-            <div class="question"><p>1. วันปิยมหาราชตรงกับวันที่เท่าใดของทุกปี</p><div class="options"><div><input type="radio" name="q1" id="q1a" value="a"><label for="q1a">5 ธันวาคม</label></div><div><input type="radio" name="q1" id="q1b" value="b"><label for="q1b">23 ตุลาคม</label></div><div><input type="radio" name="q1" id="q1c" value="c"><label for="q1c">13 ตุลาคม</label></div><div><input type="radio" name="q1" id="q1d" value="d"><label for="q1d">10 ธันวาคม</label></div></div></div>
-            <div class="question"><p>2. "พระปิยมหาราช" เป็นพระราชสมัญญานามของพระมหากษัตริย์รัชกาลใด</p><div class="options"><div><input type="radio" name="q2" id="q2a" value="a"><label for="q2a">รัชกาลที่ 4</label></div><div><input type="radio" name="q2" id="q2b" value="b"><label for="q2b">รัชกาลที่ 9</label></div><div><input type="radio" name="q2" id="q2c" value="c"><label for="q2c">รัชกาลที่ 5</label></div><div><input type="radio" name="q2" id="q2d" value="d"><label for="q2d">รัชกาลที่ 6</label></div></div></div>
-            <div class="question"><p>3. พระราชกรณียกิจที่สำคัญที่สุดข้อหนึ่งของรัชกาลที่ 5 คืออะไร</p><div class="options"><div><input type="radio" name="q3" id="q3a" value="a"><label for="q3a">การเลิกทาส</label></div><div><input type="radio" name="q3" id="q3b" value="b"><label for="q3b">การสร้างสนามบิน</label></div><div><input type="radio" name="q3" id="q3c" value="c"><label for="q3c">การประดิษฐ์อักษรไทย</label></div><div><input type="radio" name="q3" id="q3d" value="d"><label for="q3d">การเปลี่ยนชื่อประเทศ</label></div></div></div>
-            <div class="question"><p>4. ข้อใดไม่ใช่พระราชกรณียกิจในสมัยรัชกาลที่ 5</p><div class="options"><div><input type="radio" name="q4" id="q4a" value="a"><label for="q4a">การสร้างการรถไฟ</label></div><div><input type="radio" name="q4" id="q4b" value="b"><label for="q4b">การปฏิรูประบบราชการ</label></div><div><input type="radio" name="q4" id="q4c" value="c"><label for="q4c">การจัดตั้งกิจการไปรษณีย์</label></div><div><input type="radio" name="q4" id="q4d" value="d"><label for="q4d">การก่อตั้งธนาคารแห่งประเทศไทย</label></div></div></div>
-            <div class="question"><p>5. คำว่า "ปิยมหาราช" มีความหมายตรงกับข้อใด</p><div class="options"><div><input type="radio" name="q5" id="q5a" value="a"><label for="q5a">พระมหากษัตริย์ผู้ยิ่งใหญ่</label></div><div><input type="radio" name="q5" id="q5b" value="b"><label for="q5b">พระมหากษัตริย์นักพัฒนา</label></div><div><input type="radio" name="q5" id="q5c" value="c"><label for="q5c">พระมหากษัตริย์ที่ทรงเป็นที่รักยิ่งของปวงชน</label></div><div><input type="radio" name="q5" id="q5d" value="d"><label for="q5d">พระมหากษัตริย์ผู้ทรงธรรม</label></div></div></div>
-            <div class="question"><p>6. โรงพยาบาลหลวงแห่งแรกของไทยที่สร้างขึ้นในสมัยรัชกาลที่ 5 คือโรงพยาบาลใด</p><div class="options"><div><input type="radio" name="q6" id="q6a" value="a"><label for="q6a">โรงพยาบาลจุฬาลงกรณ์</label></div><div><input type="radio" name="q6" id="q6b" value="b"><label for="q6b">โรงพยาบาลศิริราช</label></div><div><input type="radio" name="q6" id="q6c" value="c"><label for="q6c">โรงพยาบาลรามาธิบดี</label></div><div><input type="radio" name="q6" id="q6d" value="d"><label for="q6d">โรงพยาบาลพระมงกุฎเกล้า</label></div></div></div>
-            <div class="question"><p>7. รัชกาลที่ 5 ทรงเป็นพระมหากษัตริย์ไทยพระองค์แรกที่ทรงทำสิ่งใด</p><div class="options"><div><input type="radio" name="q7" id="q7a" value="a"><label for="q7a">เสด็จประพาสยุโรป</label></div><div><input type="radio" name="q7" id="q7b" value="b"><label for="q7b">ทรงผนวช</label></div><div><input type="radio" name="q7" id="q7c" value="c"><label for="q7c">มีพระราชโอรส</label></div><div><input type="radio" name="q7" id="q7d" value="d"><label for="q7d">ครองราชย์ครบ 50 ปี</label></div></div></div>
-            <div class="question"><p>8. ระบบการปกครองส่วนภูมิภาคที่เรียกว่า "มณฑลเทศาภิบาล" เกิดขึ้นในรัชสมัยใด</p><div class="options"><div><input type="radio" name="q8" id="q8a" value="a"><label for="q8a">รัชกาลที่ 4</label></div><div><input type="radio" name="q8" id="q8b" value="b"><label for="q8b">รัชกาลที่ 5</label></div><div><input type="radio" name="q8" id="q8c" value="c"><label for="q8c">รัชกาลที่ 6</label></div><div><input type="radio" name="q8" id="q8d" value="d"><label for="q8d">รัชกาลที่ 7</label></div></div></div>
-            <div class="question"><p>9. พระบรมราชานุสาวรีย์ที่สำคัญของรัชกาลที่ 5 คือ "พระบรมรูปทรงม้า" ประดิษฐานอยู่ที่ใด</p><div class="options"><div><input type="radio" name="q9" id="q9a" value="a"><label for="q9a">สนามหลวง</label></div><div><input type="radio" name="q9" id="q9b" value="b"><label for="q9b">อนุสาวรีย์ชัยสมรภูมิ</label></div><div><input type="radio" name="q9" id="q9c" value="c"><label for="q9c">ลานพระราชวังดุสิต</label></div><div><input type="radio" name="q9" id="q9d" value="d"><label for="q9d">วงเวียนใหญ่</label></div></div></div>
-            <div class="question"><p>10. สิ่งใดที่ถูกนำมาใช้เป็นครั้งแรกในสมัยรัชกาลที่ 5 เพื่อพัฒนาระบบเศรษฐกิจการเงิน</p><div class="options"><div><input type="radio" name="q10" id="q10a" value="a"><label for="q10a">บัตรเครดิต</label></div><div><input type="radio" name="q10" id="q10b" value="b"><label for="q10b">เงินพดด้วง</label></div><div><input type="radio" name="q10" id="q10c" value="c"><label for="q10c">เหรียญกษาปณ์</label></div><div><input type="radio" name="q10" id="q10d" value="d"><label for="q10d">ธนบัตร</label></div></div></div>
-
-            <button type="submit">ส่งคำตอบ</button>
-        </form>
+        <form id="quiz-form"></form>
         
-        <div id="results" style="display: none;">
-             <h2>ผลการทดสอบ</h2>
+        <div id="results" class="results-container" style="display: none;">
              <p id="score"></p>
              <div id="answer-details"></div>
+             <div id="post-quiz-action"></div>
         </div>
+
+        <div id="certificate" class="certificate-container" style="display: none;">
+            <div class="certificate-header">
+                <h2>ใบเกียรติบัตร</h2>
+                <h3>Certificate of Achievement</h3>
+            </div>
+            <div class="certificate-body">
+                <p>มอบให้แด่</p>
+                <h1 id="cert-name" class="cert-name"></h1>
+                <p>เนื่องในโอกาสผ่านการทดสอบความรู้ "วันปิยมหาราช"</p>
+                <p>ด้วยคะแนนยอดเยี่ยม</p>
+                <h2 id="cert-score"></h2>
+            </div>
+            <div class="certificate-footer">
+                <p>ให้ไว้ ณ วันที่ <span id="cert-date"></span></p>
+            </div>
+        </div>
+
     </div>
 
     <script>
+        // --- ข้อมูลคำถามและคำตอบ ---
+        // **สำคัญ:** correctAnswer ต้องเป็นข้อความเต็มของคำตอบที่ถูกต้อง
         const quizData = [
-            { question: "1. วันปิยมหาราชตรงกับวันที่เท่าใดของทุกปี", correctAnswer: "b", options: { a: "5 ธันวาคม", b: "23 ตุลาคม", c: "13 ตุลาคม", d: "10 ธันวาคม" } },
-            { question: "2. 'พระปิยมหาราช' เป็นพระราชสมัญญานามของพระมหากษัตริย์รัชกาลใด", correctAnswer: "c", options: { a: "รัชกาลที่ 4", b: "รัชกาลที่ 9", c: "รัชกาลที่ 5", d: "รัชกาลที่ 6" } },
-            { question: "3. พระราชกรณียกิจที่สำคัญที่สุดข้อหนึ่งของรัชกาลที่ 5 คืออะไร", correctAnswer: "a", options: { a: "การเลิกทาส", b: "การสร้างสนามบิน", c: "การประดิษฐ์อักษรไทย", d: "การเปลี่ยนชื่อประเทศ" } },
-            { question: "4. ข้อใดไม่ใช่พระราชกรณียกิจในสมัยรัชกาลที่ 5", correctAnswer: "d", options: { a: "การสร้างการรถไฟ", b: "การปฏิรูประบบราชการ", c: "การจัดตั้งกิจการไปรษณีย์", d: "การก่อตั้งธนาคารแห่งประเทศไทย" } },
-            { question: "5. คำว่า 'ปิยมหาราช' มีความหมายตรงกับข้อใด", correctAnswer: "c", options: { a: "พระมหากษัตริย์ผู้ยิ่งใหญ่", b: "พระมหากษัตริย์นักพัฒนา", c: "พระมหากษัตริย์ที่ทรงเป็นที่รักยิ่งของปวงชน", d: "พระมหากษัตริย์ผู้ทรงธรรม" } },
-            { question: "6. โรงพยาบาลหลวงแห่งแรกของไทยที่สร้างขึ้นในสมัยรัชกาลที่ 5 คือโรงพยาบาลใด", correctAnswer: "b", options: { a: "โรงพยาบาลจุฬาลงกรณ์", b: "โรงพยาบาลศิริราช", c: "โรงพยาบาลรามาธิบดี", d: "โรงพยาบาลพระมงกุฎเกล้า" } },
-            { question: "7. รัชกาลที่ 5 ทรงเป็นพระมหากษัตริย์ไทยพระองค์แรกที่ทรงทำสิ่งใด", correctAnswer: "a", options: { a: "เสด็จประพาสยุโรป", b: "ทรงผนวช", c: "มีพระราชโอรส", d: "ครองราชย์ครบ 50 ปี" } },
-            { question: "8. ระบบการปกครองส่วนภูมิภาคที่เรียกว่า 'มณฑลเทศาภิบาล' เกิดขึ้นในรัชสมัยใด", correctAnswer: "b", options: { a: "รัชกาลที่ 4", b: "รัชกาลที่ 5", c: "รัชกาลที่ 6", d: "รัชกาลที่ 7" } },
-            { question: "9. พระบรมราชานุสาวรีย์ที่สำคัญของรัชกาลที่ 5 คือ 'พระบรมรูปทรงม้า' ประดิษฐานอยู่ที่ใด", correctAnswer: "c", options: { a: "สนามหลวง", b: "อนุสาวรีย์ชัยสมรภูมิ", c: "ลานพระราชวังดุสิต", d: "วงเวียนใหญ่" } },
-            { question: "10. สิ่งใดที่ถูกนำมาใช้เป็นครั้งแรกในสมัยรัชกาลที่ 5 เพื่อพัฒนาระบบเศรษฐกิจการเงิน", correctAnswer: "d", options: { a: "บัตรเครดิต", b: "เงินพดด้วง", c: "เหรียญกษาปณ์", d: "ธนบัตร" } }
+            { question: "วันปิยมหาราชตรงกับวันที่เท่าใดของทุกปี", options: ["5 ธันวาคม", "23 ตุลาคม", "13 ตุลาคม", "10 ธันวาคม"], correctAnswer: "23 ตุลาคม" },
+            { question: "'พระปิยมหาราช' เป็นพระราชสมัญญานามของพระมหากษัตริย์รัชกาลใด", options: ["รัชกาลที่ 4", "รัชกาลที่ 9", "รัชกาลที่ 5", "รัชกาลที่ 6"], correctAnswer: "รัชกาลที่ 5" },
+            { question: "พระราชกรณียกิจที่สำคัญที่สุดข้อหนึ่งของรัชกาลที่ 5 คืออะไร", options: ["การเลิกทาส", "การสร้างสนามบิน", "การประดิษฐ์อักษรไทย", "การเปลี่ยนชื่อประเทศ"], correctAnswer: "การเลิกทาส" },
+            { question: "ข้อใดไม่ใช่พระราชกรณียกิจในสมัยรัชกาลที่ 5", options: ["การสร้างการรถไฟ", "การปฏิรูประบบราชการ", "การจัดตั้งกิจการไปรษณีย์", "การก่อตั้งธนาคารแห่งประเทศไทย"], correctAnswer: "การก่อตั้งธนาคารแห่งประเทศไทย" },
+            { question: "คำว่า 'ปิยมหาราช' มีความหมายตรงกับข้อใด", options: ["พระมหากษัตริย์ผู้ยิ่งใหญ่", "พระมหากษัตริย์นักพัฒนา", "พระมหากษัตริย์ที่ทรงเป็นที่รักยิ่งของปวงชน", "พระมหากษัตริย์ผู้ทรงธรรม"], correctAnswer: "พระมหากษัตริย์ที่ทรงเป็นที่รักยิ่งของปวงชน" },
+            { question: "โรงพยาบาลหลวงแห่งแรกของไทยที่สร้างขึ้นในสมัยรัชกาลที่ 5 คือโรงพยาบาลใด", options: ["โรงพยาบาลจุฬาลงกรณ์", "โรงพยาบาลศิริราช", "โรงพยาบาลรามาธิบดี", "โรงพยาบาลพระมงกุฎเกล้า"], correctAnswer: "โรงพยาบาลศิริราช" },
+            { question: "รัชกาลที่ 5 ทรงเป็นพระมหากษัตริย์ไทยพระองค์แรกที่ทรงทำสิ่งใด", options: ["เสด็จประพาสยุโรป", "ทรงผนวช", "มีพระราชโอรส", "ครองราชย์ครบ 50 ปี"], correctAnswer: "เสด็จประพาสยุโรป" },
+            { question: "ระบบการปกครองส่วนภูมิภาคที่เรียกว่า 'มณฑลเทศาภิบาล' เกิดขึ้นในรัชสมัยใด", options: ["รัชกาลที่ 4", "รัชกาลที่ 5", "รัชกาลที่ 6", "รัชกาลที่ 7"], correctAnswer: "รัชกาลที่ 5" },
+            { question: "พระบรมราชานุสาวรีย์ที่สำคัญของรัชกาลที่ 5 คือ 'พระบรมรูปทรงม้า' ประดิษฐานอยู่ที่ใด", options: ["สนามหลวง", "อนุสาวรีย์ชัยสมรภูมิ", "ลานพระราชวังดุสิต", "วงเวียนใหญ่"], correctAnswer: "ลานพระราชวังดุสิต" },
+            { question: "สิ่งใดที่ถูกนำมาใช้เป็นครั้งแรกในสมัยรัชกาลที่ 5 เพื่อพัฒนาระบบเศรษฐกิจการเงิน", options: ["บัตรเครดิต", "เงินพดด้วง", "เหรียญกษาปณ์", "ธนบัตร"], correctAnswer: "ธนบัตร" }
         ];
 
-        const quizForm = document.getElementById('quiz-form');
-        const resultsContainer = document.getElementById('results');
-        const scoreElement = document.getElementById('score');
-        const answerDetailsElement = document.getElementById('answer-details');
+        // --- ฟังก์ชันสำหรับสุ่ม Array (Fisher-Yates Shuffle Algorithm) ---
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]]; // สลับตำแหน่ง
+            }
+        }
 
-        quizForm.addEventListener('submit', function(event) {
+        // --- ส่วนหลัก: ทำงานเมื่อหน้าเว็บโหลดเสร็จ ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const quizForm = document.getElementById('quiz-form');
+            const userName = localStorage.getItem('quizUserName') || "ผู้ทำแบบทดสอบ";
+            document.getElementById('quiz-header').textContent += ` (โดย ${userName})`;
+
+            // 1. สุ่มลำดับคำถาม
+            shuffleArray(quizData);
+
+            // 2. สร้าง HTML ของแบบทดสอบ
+            let quizHTML = '';
+            quizData.forEach((questionData, index) => {
+                quizHTML += `<div class="question"><p>${index + 1}. ${questionData.question}</p>`;
+                
+                // คัดลอกและสุ่มลำดับตัวเลือก
+                const shuffledOptions = [...questionData.options];
+                shuffleArray(shuffledOptions);
+                
+                quizHTML += `<div class="options">`;
+                shuffledOptions.forEach(option => {
+                    // ใช้ backticks (`) เพื่อสร้าง template string ที่ซับซ้อน
+                    quizHTML += `
+                        <div>
+                            <input type="radio" name="q${index}" id="q${index}_${option}" value="${option}">
+                            <label for="q${index}_${option}">${option}</label>
+                        </div>
+                    `;
+                });
+                quizHTML += `</div></div>`;
+            });
+            quizHTML += `<button type="submit">ส่งคำตอบ</button>`;
+            quizForm.innerHTML = quizHTML;
+            
+            // 3. จัดการการส่งคำตอบ
+            quizForm.addEventListener('submit', handleSubmit);
+        });
+
+        // --- ฟังก์ชันจัดการเมื่อส่งคำตอบ ---
+        function handleSubmit(event) {
             event.preventDefault();
+
             let score = 0;
             let answerDetailsHTML = '<h3>เฉลยแบบทดสอบ</h3>';
+            
             quizData.forEach((data, index) => {
-                const questionNumber = index + 1;
-                const formName = 'q' + questionNumber;
-                const userAnswer = (quizForm.elements[formName] || {}).value;
-                answerDetailsHTML += `<div class="answer-review"><p><strong>${data.question}</strong></p>`;
+                const formName = `q${index}`;
+                const userAnswer = (event.target.elements[formName] || {}).value;
+
+                answerDetailsHTML += `<div class="answer-review"><p><strong>${index + 1}. ${data.question}</strong></p>`;
                 if (userAnswer) {
                     if (userAnswer === data.correctAnswer) {
                         score++;
-                        answerDetailsHTML += `<p>คุณตอบ: <span class="correct">${data.options[userAnswer]} (ถูกต้อง)</span></p>`;
+                        answerDetailsHTML += `<p>คุณตอบ: <span class="correct">${userAnswer} (ถูกต้อง)</span></p>`;
                     } else {
-                        answerDetailsHTML += `<p>คุณตอบ: <span class="incorrect">${data.options[userAnswer]} (ผิด)</span></p>`;
-                        answerDetailsHTML += `<p class="correct-answer-text">เฉลย: ${data.options[data.correctAnswer]}</p>`;
+                        answerDetailsHTML += `<p>คุณตอบ: <span class="incorrect">${userAnswer} (ผิด)</span></p>`;
+                        answerDetailsHTML += `<p class="correct-answer-text">เฉลย: ${data.correctAnswer}</p>`;
                     }
                 } else {
                     answerDetailsHTML += `<p class="incorrect">คุณไม่ได้ตอบข้อนี้</p>`;
-                    answerDetailsHTML += `<p class="correct-answer-text">เฉลย: ${data.options[data.correctAnswer]}</p>`;
+                    answerDetailsHTML += `<p class="correct-answer-text">เฉลย: ${data.correctAnswer}</p>`;
                 }
                 answerDetailsHTML += `</div><hr>`;
             });
-            scoreElement.textContent = `คุณได้ ${score} จาก ${quizData.length} คะแนน`;
-            answerDetailsElement.innerHTML = answerDetailsHTML;
-            resultsContainer.style.display = 'block';
-            resultsContainer.scrollIntoView({ behavior: 'smooth' });
-        });
+
+            // ซ่อนฟอร์มข้อสอบ
+            document.getElementById('quiz-form').style.display = 'none';
+            document.getElementById('quiz-header').style.display = 'none';
+
+            // 4. ตรวจสอบคะแนนและแสดงผลตามเงื่อนไข
+            if (score > 7) {
+                // แสดงใบเกียรติบัตร
+                const userName = localStorage.getItem('quizUserName') || "ผู้ทำแบบทดสอบ";
+                const today = new Date();
+                const dateString = today.toLocaleDateString('th-TH', { day: 'numeric', month: 'long', year: 'numeric' });
+
+                document.getElementById('cert-name').textContent = userName;
+                document.getElementById('cert-score').textContent = `${score} / ${quizData.length} คะแนน`;
+                document.getElementById('cert-date').textContent = dateString;
+                document.getElementById('certificate').style.display = 'block';
+
+            } else {
+                // แสดงผลคะแนนปกติและปุ่มลองใหม่
+                const resultsContainer = document.getElementById('results');
+                document.getElementById('score').textContent = `คุณได้ ${score} จาก ${quizData.length} คะแนน`;
+                document.getElementById('answer-details').innerHTML = answerDetailsHTML;
+                
+                const retryButton = document.createElement('button');
+                retryButton.textContent = 'ลองใหม่อีกครั้ง';
+                retryButton.className = 'retry-button';
+                retryButton.onclick = () => window.location.reload(); // โหลดหน้าใหม่เพื่อสุ่มใหม่
+                document.getElementById('post-quiz-action').appendChild(retryButton);
+                
+                resultsContainer.style.display = 'block';
+            }
+        }
     </script>
 </body>
 </html>
