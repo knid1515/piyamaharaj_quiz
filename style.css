@@ -197,3 +197,32 @@ button:hover {
     color: #34495e;
     font-size: 1.1em;
 }
+/* --- ปุ่มดาวน์โหลด --- */
+.download-button-container {
+    text-align: center;
+    margin-top: -15px; /* ดึงปุ่มขึ้นมาเล็กน้อย */
+    padding-bottom: 20px;
+}
+
+#download-cert-button {
+    background-color: #27ae60; /* สีเขียว */
+    width: auto; /* ไม่ต้องเต็มความกว้าง */
+    padding: 10px 20px;
+    font-size: 16px;
+    display: inline-flex; /* จัดไอคอนกับข้อความให้อยู่ในแนวเดียวกัน */
+    align-items: center;
+    gap: 8px; /* ระยะห่างระหว่างไอคอนกับข้อความ */
+    border-bottom-left-radius: 8px; /* ทำให้มุมโค้งมนเข้ากับกรอบ */
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#download-cert-button:hover {
+    background-color: #229954;
+}
+
+#download-cert-button svg {
+    width: 20px;
+    height: 20px;
+}
